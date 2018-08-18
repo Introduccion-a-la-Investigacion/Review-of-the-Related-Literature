@@ -9,15 +9,25 @@
 %
 
 \documentclass{beamer}
+\usepackage{multicol}
 \setbeamertemplate{navigation symbols}{}
-
 
 \usetheme{Warsaw}
 
+\newcounter{sauvegardeenumi}
+\newcommand{\asuivre}{\setcounter{sauvegardeenumi}{\theenumi}}
+\newcommand{\suite}{\setcounter{enumi}{\thesauvegardeenumi}}
+
 \beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
 \begin{document}
-\title{Revisi\'on de la literatura relacionada}  
-\author{Kathy Brenes Guerrero}
+\title{Investigaci\'on pr\'actica: Planificaci\'on y dise\~no} 
+\subtitle{Revisi\'on de la literatura relacionada}   
+\author{Autores: Paul D.Leedy, Jeanne Ellis Ormrod.}
+\institute{ 
+    Introducci\'on a la Investigaci\'on 
+    \newline Instituto Tecnol\'ogico de Costa Rica 
+    \newline Estudiante: Kathy Brenes Guerrero.
+} 
 \date{\today} 
 
 
@@ -25,185 +35,348 @@
 \titlepage
 \end{frame}
 
-\begin{frame}\frametitle{Table de contenidos}\tableofcontents
+\begin{frame}
+\frametitle{Tabla de contenidos}  
+    \tableofcontents[hideallsubsections]
 \end{frame} 
 
 
 \section{Revisi\'on de la literatura} %Comprender el papel de la revisi\'on de la literatura
-\begin{frame}\frametitle{Comprender el papel de la revisi\'on de la literatura} 
-Each frame should have a title.
-\end{frame}
-
-\section{Estrategias para localizar literatura relacionada} 
-\subsection{Cat\'alogo de la biblioteca}
-\begin{frame}\frametitle{Catálogo de la biblioteca}
-\begin{itemize}
-\item Introduction to  \LaTeX  
-\item Course 2 
-\item Termpapers and presentations with \LaTeX 
-\item Beamer class
-\end{itemize} 
-\end{frame}
-
-\subsection{\'Indices and Abstracts}
-\begin{frame}\frametitle{\'Indices and Abstracts}
-\begin{itemize}
-\item Introduction to  \LaTeX  
-\item Course 2 
-\item Termpapers and presentations with \LaTeX 
-\item Beamer class
-\end{itemize} 
-\end{frame}
-
-\subsection{Bases de datos en l\'inea}
-\begin{frame}\frametitle{Bases de datos en l\'inea}
-\begin{itemize}
-\item Introduction to  \LaTeX  
-\item Course 2 
-\item Termpapers and presentations with \LaTeX 
-\item Beamer class
-\end{itemize} 
-\end{frame}
-
-\subsection{Referencias Bibliotecarias}
-\begin{frame}\frametitle{Referencias Bibliotecarias}
-\begin{itemize}
-\item Introduction to  \LaTeX  
-\item Course 2 
-\item Termpapers and presentations with \LaTeX 
-\item Beamer class
-\end{itemize} 
-\end{frame}
-
-\subsection{Navegar por Internet}
-\begin{frame}\frametitle{Navegar por Internet}
-\begin{itemize}
-\item Introduction to  \LaTeX  
-\item Course 2 
-\item Termpapers and presentations with \LaTeX 
-\item Beamer class
-\end{itemize} 
-\end{frame}
-
-\subsection{Publicaciones Gubernamentales Relevantes}
-\begin{frame}\frametitle{Publicaciones Gubernamentales Relevantes}
-\begin{itemize}
-\item Introduction to  \LaTeX  
-\item Course 2 
-\item Termpapers and presentations with \LaTeX 
-\item Beamer class
-\end{itemize} 
-\end{frame}
-
-\subsection{ Citas y listas de referencias investigaciones previas}
-\begin{frame}\frametitle{Citas y listas de referencias investigaciones previas}
-\begin{itemize}
-\item Introduction to  \LaTeX  
-\item Course 2 
-\item Termpapers and presentations with \LaTeX 
-\item Beamer class
-\end{itemize} 
-\end{frame}
-
-\section{Llevar a cabo una búsqueda de literatura} 
-\subsection{Usando su biblioteca de manera eficiente}
-\begin{frame}\frametitle{Usando su biblioteca de manera eficiente}
-\begin{tabular}{|c|c|c|}
-\hline
-\textbf{Date} & \textbf{Instructor} & \textbf{Title} \\
-\hline
-WS 04/05 & Sascha Frank & First steps with  \LaTeX  \\
-\hline
-SS 05 & Sascha Frank & \LaTeX \ Course serial \\
-\hline
-\end{tabular}
-\end{frame}
-
-\section{Section no. 4}
-\subsection{blocs}
-\begin{frame}\frametitle{blocs}
-
-\begin{block}{title of the bloc}
-bloc text
-\end{block}
-
-\begin{exampleblock}{title of the bloc}
-bloc text
-\end{exampleblock}
+    \begin{frame}
+        \frametitle{Comprender el papel de la revisi\'on de la literatura} 
+        \begin{multicols}{2}
+          
+                \begin{enumerate}
+                    \item Determinar el estado actual.
+                        \begin{figure}
+                            \includegraphics[scale=0.50]{figures/prework}
+                            \newline
+                            {\tiny Tomado de la referencia [1] }
+                            \caption{ Trabajo previo. }
+                        \end{figure}
+            
+                    \item Ofrecer nuevas ideas, perspectivas y enfoques.
+                        \begin{figure}
+                            \includegraphics[scale=0.15]{figures/newIdeas}
+                            \newline
+                            {\tiny Tomado de la referencia [2] }
+                            \caption{Nuevas ideas.}
+                        \end{figure}
+                        \asuivre
+                \end{enumerate}
+            \end{multicols}
+    \end{frame}
 
 
-\begin{alertblock}{title of the bloc}
-bloc text
-\end{alertblock}
-\end{frame}
+    \begin{frame}
+        \frametitle{Comprender el papel de la revisi\'on de la literatura} 
+        \begin{multicols}{2}
+            \begin{enumerate}
+                \suite
+                \item Posibles personas para recibir asesoramiento.
+                \begin{figure}
+                    \includegraphics[scale=0.10]{figures/asesoramiento}
+                    \newline
+                    {\tiny Tomado de la referencia [3] }
+                    \caption{ Asesoramiento. }
+                \end{figure}
 
-\section{Section no. 5}
-\subsection{split screen}
+                \item Metodolog\'ia de trabajo de otros.
+                \item Fuentes de datos que no conoc\'ia.
+                    \begin{figure}
+                        \includegraphics[scale=0.40]{figures/newResources}
+                        \newline
+                        {\tiny Tomado de la referencia [4] }
+                        \caption{Nuevas referencias.}
+                    \end{figure}
+                    \asuivre
+            \end{enumerate}
+        \end{multicols}
+    \end{frame}
 
-\begin{frame}\frametitle{splitting screen}
-\begin{columns}
-\begin{column}{5cm}
-\begin{itemize}
-\item Beamer 
-\item Beamer Class 
-\item Beamer Class Latex 
-\end{itemize}
-\end{column}
-\begin{column}{5cm}
-\begin{tabular}{|c|c|}
-\hline
-\textbf{Instructor} & \textbf{Title} \\
-\hline
-Sascha Frank &  \LaTeX \ Course 1 \\
-\hline
-Sascha Frank &  Course serial  \\
-\hline
-\end{tabular}
-\end{column}
-\end{columns}
-\end{frame}
+     \begin{frame}
+        \frametitle{Comprender el papel de la revisi\'on de la literatura} 
+        \begin{multicols}{2}
+            \begin{enumerate}
+                \suite
+                \item Herramientas de medici\'on de otros investigadores.
+                \begin{figure}
+                    \includegraphics[scale=0.50]{figures/medicion}
+                    \newline
+                    {\tiny Tomado de la referencia [5] }
+                    \caption{Gr\'aficos de resultados. }
+                \end{figure}
 
-%\subsection{Pictures} 
-%\begin{frame}\frametitle{pictures in latex beamer class}
-%\begin{figure}
-%\includegraphics[scale=0.5]{PIC1} 
-%\caption{show an example picture}
-%\end{figure}
-%\end{frame}
+                \item M\'etodos para lidiar con dificultades.
+                \item Interpretar y dar sentido a los resultados.
+                    \begin{figure}
+                        \includegraphics[scale=0.70]{figures/resultsOriented}
+                        \newline
+                        {\tiny Tomado de la referencia [6] }
+                        \caption{Entender resultados.}
+                    \end{figure}
+                    \asuivre
+            \end{enumerate}
+        \end{multicols}
+    \end{frame}
 
-\subsection{joining picture and lists} 
+     \begin{frame}
+        \frametitle{Comprender el papel de la revisi\'on de la literatura} 
+            \begin{enumerate}
+                \suite
+                \item Reforzar la confianza en que vale la pena estudiar su tema.
+                \begin{multicols}{2}
+                    \begin{figure}
+                        \includegraphics[scale=0.50]{figures/confianza}
+                        \newline
+                        {\tiny Tomado de la referencia [7] }
+                        \caption{ Confianza. }
+                    \end{figure}
 
-\begin{frame}
-\frametitle{pictures and lists in beamer class}
-\begin{columns}
-\begin{column}{5cm}
-\begin{itemize}
-\item<1-> subject 1
-\item<3-> subject 2
-\item<5-> subject 3
-\end{itemize}
-\vspace{3cm} 
-\end{column}
-\begin{column}{5cm}
-%\begin{overprint}
-%\includegraphics<2>{PIC1}
-%\includegraphics<4>{PIC2}
-%\includegraphics<6>{PIC3}
-%\end{overprint}
-\end{column}
-\end{columns}
-\end{frame}
+                    \begin{figure}
+                        \includegraphics[scale=0.50]{figures/recursos}
+                        \newline
+                        {\tiny Tomado de la referencia [8] }
+                        \caption{ Recursos invertidos. }
+                    \end{figure}
+                \end{multicols}
+            \end{enumerate}       
+    \end{frame}
 
+\section{Localizar literatura relacionada} 
+    \begin{frame}
+    \frametitle{Estrategias para localizar literatura relacionada}
+        \begin{multicols}{2}            
+            \begin{itemize}
+                \item Muchos recursos disponibles.  
+                \item Enfocar la b\'usqueda. 
+                \item \textbf{Palabras clave.} 
+                \item Use libros y publicaciones con fechas de copyright recientes.                    
+            \end{itemize}                 
+            \begin{figure}
+                \includegraphics[scale=0.60]{figures/bullying}
+                \newline
+                {\tiny Tomado de la referencia [9] }
+                \caption{ Ejemplo de Bullying. }
+            \end{figure}                    
+        \end{multicols}
+    \end{frame}
 
-\subsection{pictures which need more space} 
-\begin{frame}[plain]
-\frametitle{plain, or a way to get more space}
-\begin{figure}
-%\includegraphics[scale=0.5]{PIC1} 
-\caption{show an example picture}
-\end{figure}
-\end{frame}
+    \subsection{Cat\'alogo de la biblioteca}
+        \begin{frame}\frametitle{Cat\'alogo de la biblioteca}
+            \begin{itemize}
+                \item Publicaciones peri\'odicas que posee la biblioteca.                
+                \item Sistema de clasificaci\'on Dewey Decimal (DD).
+                \item Sistema de clasificaci\'on de la Biblioteca del Congreso (LC).                 
+            \end{itemize} 
+            \begin{figure}
+                \includegraphics[scale=0.15]{figures/catalogoBiblioteca}
+                \newline
+                {\tiny Tomado de la referencia [10] }
+                \caption{ Cat\'alogo. }
+            \end{figure}      
+        \end{frame}
 
+    \subsection{\'Indices and Abstracts}
+    \begin{frame}
+    \frametitle{\'Indices and Abstracts}
+        \begin{multicols}{2}  
+            \begin{itemize}
+                \item \textbf{\'Indice: } Incluye art\'iculos, informes de investigaci\'on y otros documentos. 
+            \end{itemize}
+            \begin{itemize}
+                \item \textbf{Abstract: } Proporciona la fuente del estudio original. 
+            \end{itemize}  
+        \end{multicols}
+        \begin{figure}
+            \includegraphics[scale=0.45]{figures/index}       
+        \end{figure}  
+    \end{frame}
 
+    \subsection{Bases de datos en l\'inea}
+        \begin{frame}\frametitle{Bases de datos en l\'inea}
+            \begin{itemize}
+                \item Permiten b\'usquedas en miles de revistas y otras fuentes.  
+                \item Ubicar fuentes de informaci\'on disponibles en la biblioteca.
+            \end{itemize} 
+            \begin{figure}
+                \includegraphics[scale=0.45]{figures/onlineDB}
+                \newline
+                {\tiny Tomado de la referencia [11] }
+                \caption{ Base de datos en l\'inea. }
+            \end{figure} 
+        \end{frame}
 
+    \subsection{Bibliotecarios de referencia}
+    \begin{frame}\frametitle{Bibliotecarios de referencia}
+        \begin{multicols}{2}  
+            \begin{itemize}
+                \item Demostrar c\'omo usar los recursos. 
+                \item La mejor manera de dominar la biblioteca es usarla.  
+            \end{itemize} 
+             \begin{figure}
+                \includegraphics[scale=0.45]{figures/bibliotecario}
+                \newline
+                {\tiny Tomado de la referencia [12] }
+                \caption{Bibliotecario. }
+            \end{figure}
+        \end{multicols}       
+    \end{frame}
+
+    \subsection{Navegar por Internet}
+    \begin{frame}\frametitle{Navegar por Internet}
+    \begin{multicols}{2}  
+        \begin{itemize}
+            \item Indicaciones importantes. 
+                \begin{enumerate}
+                    \item Usar al menos dos palabras clave.
+                    \item Escriba un signo m\'as (+) antes de cualquier palabra clave.
+                    \item Ponga comillas alrededor de la frase.
+                \end{enumerate} 
+            \item Siempre que encuentre informaci\'on, debe anotar el URL y la fecha.
+        \end{itemize} 
+        \begin{figure}
+                \includegraphics[scale=0.25]{figures/navWeb}
+                \newline
+                {\tiny Tomado de la referencia [13] }
+                \caption{Navegar por internet. }
+            \end{figure}
+        \end{multicols}
+    \end{frame}
+
+   \begin{frame}
+   \frametitle{Uso de citas y listas de referencias de los que se han ido antes}
+        \begin{itemize}
+            \item Valiosa orientaci\'on sobre estudios de investigaci\'on.  
+            \item Rastrear cualquier referencia que vea citada por tres o m\'as investigadores.
+            \item \textbf{Siempre que sea posible, vaya a la fuente original y l\'eala usted mismo.}
+        \end{itemize} 
+    \end{frame}
+
+\section{B\'usqueda de literatura} 
+ \begin{frame}\frametitle{B\'usqueda de literatura}
+    \begin{multicols}{2}  
+        \begin{itemize}
+            \item Seleccionar un problema o pregunta de investigaci\'on.
+            \item Enfoque de divide y vencer\'as.
+        \end{itemize} 
+        \begin{figure}
+                \includegraphics[scale=0.25]{figures/recordar}
+                \newline
+                {\tiny Tomado de la referencia [14] }
+                \caption{Importante de recordar. }
+            \end{figure}
+        \end{multicols}
+    \end{frame}
+
+    \subsection{Utilizar el tiempo de biblioteca de manera eficiente}
+        \begin{frame}\frametitle{Usar su tiempo de biblioteca de manera eficiente}
+        \begin{multicols}{2}
+            \begin{enumerate}
+                \item Disponer de herramientas de recopilaci\'on de datos.
+                \item Identificar el material y la disponibilidad.
+                \item Desarrollar un plan de ataque. 
+                \item Busque sus fuentes.            
+                \asuivre
+            \end{enumerate}
+             \begin{figure}
+                \includegraphics[scale=0.45]{figures/timeManagement}
+                \newline
+                {\tiny Tomado de la referencia [15] }
+                \caption{Manejo del tiempo. }
+            \end{figure}
+        \end{multicols}
+        \end{frame}
+        \begin{frame}\frametitle{Usar su tiempo de biblioteca de manera eficiente}
+        \begin{multicols}{2}
+            \begin{enumerate}
+                \suite
+                \item Registre toda la informaci\'on b\'asica mientras lee cada fuente.
+                \item Identifique estrategias para obtener fuentes que no est\'an disponibles.            
+                \asuivre
+            \end{enumerate}
+             \begin{figure}
+                \includegraphics[scale=0.20]{figures/timeManagement2}
+                \newline
+                {\tiny Tomado de la referencia [16] }
+                \caption{Manejo de los recursos. }
+            \end{figure}
+        \end{multicols}
+         \end{frame}
+
+    \subsection{Evaluar la investigaci\'on de otros}
+        \begin{frame}
+        \frametitle{Evaluar la investigaci\'on de otros}
+        \begin{multicols}{2}
+            \begin{enumerate}
+                \item Determinar ideas, hallazgos de investigaci\'on y conclusiones.
+                \item Conciliar los hallazgos inconsistentes obtenidos.
+                \item Ideas sobre c\'omo puede mejorar sus propios esfuerzos.        
+                \asuivre
+            \end{enumerate}
+             \begin{figure}
+                \includegraphics[scale=0.45]{figures/checklist}
+                \newline
+                {\tiny Tomado de la referencia [17] }
+                \caption{Evaluar. }
+            \end{figure}
+        \end{multicols}
+        \end{frame}
+
+\section{Escribir la rese\~na de la literatura}
+    \begin{frame}\frametitle{Escribir la rese\~na de la literatura}
+    \begin{multicols}{2}
+                \begin{enumerate}                    
+                    \item Obtener la orientaci\'on psicol\'ogica adecuada.
+                    \item Tener un plan.  
+                    \item Enfatizar la relaci\'on con su problema de investigaci\'on.         
+                    \asuivre
+                \end{enumerate}
+                \begin{figure}
+                    \includegraphics[scale=0.10]{figures/focus}
+                    \newline
+                    {\tiny Tomado de la referencia [18] }
+                    \caption{Manejo de los recursos. }
+                \end{figure}
+            \end{multicols}
+    \end{frame}
+
+    \begin{frame}\frametitle{Escribir la rese\~na de la literatura}
+    \begin{multicols}{2}
+                \begin{enumerate}
+                    \suite
+                    \item Utilizar frases de transici\'on.
+                    \item Diferenciar entre escribir la literatura y plagiarla.  
+                    \item Siempre dar cr\'edito.       
+                    \item Minimice el uso de citas directas del trabajo de otras personas.    
+                    \asuivre
+                \end{enumerate}               
+            \end{multicols}
+    \end{frame}
+
+    \begin{frame}\frametitle{Escribir la rese\~na de la literatura}
+    \begin{multicols}{2}
+                \begin{enumerate}
+                    \suite
+                    \item Resuma lo que dijo.
+                    \item Recuerde que su primer borrador seguramente no ser\'a su \'ultimo borrador. 
+                    \item Pida consejos y comentarios a los dem\'as.                   
+                \end{enumerate}               
+            \end{multicols}
+    \end{frame}
+
+\section{Conclusiones}
+    \begin{frame}\frametitle{Conclusiones}
+        \begin{enumerate}                    
+            \item Seleccione un tema que sea de su inter\'es.
+            \item Haga un trabajo de investigaci\'on previa antes de comenzar a trabajar. 
+            \item Recuerde que hacer una buena revisi\'on de la literatura puede ahorrarle mucho tiempo tiempo y trabajo.                   
+        \end{enumerate}   
+    \end{frame}
+
+    \begin{frame}%%     2
+    \begin{center}
+    {\fontsize{25}{30}\selectfont Muchas gracias.}
+    \end{center}
+    \end{frame}
 \end{document}
