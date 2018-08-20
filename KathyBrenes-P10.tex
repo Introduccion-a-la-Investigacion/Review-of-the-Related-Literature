@@ -10,6 +10,19 @@
 
 \documentclass{beamer}
 \usepackage{multicol}
+\usepackage{csquotes}
+\usepackage[pages=some]{background}
+
+\backgroundsetup{
+scale=1,
+color=black,
+opacity=0.4,
+angle=0,
+contents={%
+  \includegraphics[width=\paperwidth,height=\paperheight]{figures/trafficJam}
+  }%
+}
+
 \setbeamertemplate{navigation symbols}{}
 
 \usetheme{Warsaw}
@@ -17,6 +30,7 @@
 \newcounter{sauvegardeenumi}
 \newcommand{\asuivre}{\setcounter{sauvegardeenumi}{\theenumi}}
 \newcommand{\suite}{\setcounter{enumi}{\thesauvegardeenumi}}
+
 
 \beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
 \begin{document}
@@ -35,11 +49,23 @@
 \titlepage
 \end{frame}
 
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{figures/trafficJam.jpg}}%
+\begin{frame}
+\end{frame}
+}
+
 \begin{frame}
 \frametitle{Tabla de contenidos}  
     \tableofcontents[hideallsubsections]
 \end{frame} 
 
+
+\section{Introducci\'on} 
+    \begin{frame}
+        \frametitle{Introducci\'on} 
+        Beneficios de revisar lo que otros han hecho en \'areas que son similares, aunque no necesariamente id\'enticas, al propio tema de investigaci\'on.
+    \end{frame}
 
 \section{Revisi\'on de la literatura} %Comprender el papel de la revisi\'on de la literatura
     \begin{frame}
@@ -101,7 +127,7 @@
                 \suite
                 \item Herramientas de medici\'on de otros investigadores.
                 \begin{figure}
-                    \includegraphics[scale=0.50]{figures/medicion}
+                    \includegraphics[scale=0.40]{figures/medicion}
                     \newline
                     {\tiny Tomado de la referencia [5] }
                     \caption{Gr\'aficos de resultados. }
@@ -110,7 +136,7 @@
                 \item M\'etodos para lidiar con dificultades.
                 \item Interpretar y dar sentido a los resultados.
                     \begin{figure}
-                        \includegraphics[scale=0.70]{figures/resultsOriented}
+                        \includegraphics[scale=0.60]{figures/resultsOriented}
                         \newline
                         {\tiny Tomado de la referencia [6] }
                         \caption{Entender resultados.}
@@ -258,7 +284,7 @@
     \begin{multicols}{2}  
         \begin{itemize}
             \item Seleccionar un problema o pregunta de investigaci\'on.
-            \item Enfoque de divide y vencer\'as.
+            \item Enfoque de \emph{\enquote{Divide y vencer\'as}}.
         \end{itemize} 
         \begin{figure}
                 \includegraphics[scale=0.25]{figures/recordar}
@@ -350,7 +376,13 @@
                     \item Siempre dar cr\'edito.       
                     \item Minimice el uso de citas directas del trabajo de otras personas.    
                     \asuivre
-                \end{enumerate}               
+                \end{enumerate}   
+                \begin{figure}
+                    \includegraphics[scale=0.30]{figures/plagio}
+                    \newline
+                    {\tiny Tomado de la referencia [20] }
+                    \caption{Plagio. }
+                \end{figure}               
             \end{multicols}
     \end{frame}
 
@@ -359,9 +391,15 @@
                 \begin{enumerate}
                     \suite
                     \item Resuma lo que dijo.
-                    \item Recuerde que su primer borrador seguramente no ser\'a su \'ultimo borrador. 
+                    \item Recuerde que su primer borrador seguramente no ser\'a el \'ultimo. 
                     \item Pida consejos y comentarios a los dem\'as.                   
-                \end{enumerate}               
+                \end{enumerate}         
+                \begin{figure}
+                    \includegraphics[scale=0.45]{figures/borrador}
+                    \newline
+                    {\tiny Tomado de la referencia [19] }
+                    \caption{Borradores. }
+                \end{figure}      
             \end{multicols}
     \end{frame}
 
@@ -370,7 +408,7 @@
         \begin{enumerate}                    
             \item Seleccione un tema que sea de su inter\'es.
             \item Haga un trabajo de investigaci\'on previa antes de comenzar a trabajar. 
-            \item Recuerde que hacer una buena revisi\'on de la literatura puede ahorrarle mucho tiempo tiempo y trabajo.                   
+            \item Recuerde que hacer una buena revisi\'on de la literatura puede ahorrarle mucho tiempo y trabajo.                   
         \end{enumerate}   
     \end{frame}
 
@@ -378,5 +416,55 @@
     \begin{center}
     {\fontsize{25}{30}\selectfont Muchas gracias.}
     \end{center}
+    \end{frame}
+
+\begin{frame}\frametitle{Referencias}
+    \begin{thebibliography}{1}
+        \bibitem{[1]} Harmonia (2011) \emph{Beneficios de compartir con los demas} [Blog post]. Consultado desde https://harmonia.la/comunidad/3\_beneficios\_de\_compartir\_tu\_conocimiento\_con\_los\_demas
+        \bibitem{[2]} \emph{Grandes ideas} (2012). Consultado desde https://cbncuritiba.com/sua-carreira-em-pauta-empresa-junior-pode-ser-ponto-de-partida-para-experiencia-profissional/empresario-com-uma-grande-ideia\_1012-219/ 
+        \bibitem{[3]} \emph{Asesoramiento profesional.}. Consultado desde http://www.gorbeialdea.com/es/turismo/profesionales/competitividad/asesoramiento-empresarial.html
+        \bibitem{[4]} \emph{Asombro.} (2001). Consultado desde https://definicion.de/asombro/   
+    \end{thebibliography}
+    \end{frame}
+
+\begin{frame}\frametitle{Referencias}
+    \begin{thebibliography}{1}
+        \bibitem{[5]}Fundamentos de psicologia educativa. \emph{Instrumentos de medici\'on.} Consultado desde http://fundamentosdepsicologiaeducativa.blogspot.com/2017/05/41-concepto-de-medicion-42-instrumentos.html
+        \bibitem{[6]} \emph{Interpretaci\'on de los resultados.}. Consultado desde http://lesbos.webcam/camwhores/interpretacion-de-los-resultados-de.html
+        \bibitem{[7]} \emph{Bullying.}. Consultado desde http://www.gorbeialdea.com/es/turismo/profesionales/competitividad/asesoramiento-empresarial.html
+   \end{thebibliography}
+    \end{frame}
+
+\begin{frame}\frametitle{Referencias}
+    \begin{thebibliography}{1}
+        \bibitem{[9]} UDEP  (2013) \emph{Celebran d\'ia del bibliotecario.} Consultado desde http://udep.edu.pe/hoy/2013/celebraran-el-dia-del-bibliotecario/
+        \bibitem{[10]} \emph{Recordar.} (2018). Consultado desde https://rolloid.net/recordar-practicamente-cualquier-cosa-utilizando-metodo-loci/
+        \bibitem{[11]} \emph{Meritocracia}. Consultado desde https://www.youtube.com/watch?v=SHiSe6-mOiY
+        \bibitem{[12]} \emph{Manejo del tiempo.}  Consultado desdehttps://www.businessforunicorns.com/time-management-two-things/    
+    \end{thebibliography}
+    \end{frame}
+
+\begin{frame}\frametitle{Referencias}
+    \begin{thebibliography}{1}
+        \bibitem{[13]} \emph{Asesoramiento}. Consultado desde https://blog.aritraroy.in/the-ultimate-pre-release-checklist-for-android-app-success-on-play-store-cb0eb9f59ce9?gi=4e2377dd4dd1
+        \bibitem{[14]} \emph{Traffic jam.}. Consultado desde http://www.thedrive.com/accelerator/602/the-10-biggest-traffic-jams-ever
+        \bibitem{[15]} \emph{Borradores.} (2012). Consultado desde https://draft.com/
+        \bibitem{[16]} \emph{Latex-Tutorial.} (2018). Consultado desde https://www.latex-tutorial.com        
+    \end{thebibliography}
+    \end{frame}
+\begin{frame}\frametitle{Referencias}
+    \begin{thebibliography}{1}
+        \bibitem{[17]}The Editors of Encyclopaedia Britannica  (2013) \emph{LaTeX COMPUTER PROGRAMMING LANGUAGE} [Blog post]. Consultado desde https://www.britannica.com/technology/LaTeX-computer-programming-language
+        \bibitem{[18]} \emph{Introduction to LaTeX.} (2018). Consultado desde https://www.latex-project.org/about/
+        \bibitem{[19]} \emph{Checklist image.} (1994). Consultado desde https://blog.aritraroy.in/the-ultimate-pre-release-checklist-for-android-app-success-on-play-store-cb0eb9f59ce9?gi=4e2377dd4dd1
+          
+    \end{thebibliography}
+    \end{frame}
+
+    \begin{frame}\frametitle{Referencias}
+    \begin{thebibliography}{1}
+    \bibitem{[20]} \emph{Focus and You Will Succeed} (2000). Consultado desde  http://www.tameraaragon.com/focus-and-you-will-succeed/     
+    \bibitem{[8]} \emph{Servidores inform\'aticos.} Consultado desde https://pt.dreamstime.com/foto-de-stock-conceito-da-tecnologia-de-armazenamento-do-servidor-de-informa%C3%A7%C3%A3o-do-base-de-dados-image77457469    
+    \end{thebibliography}
     \end{frame}
 \end{document}
